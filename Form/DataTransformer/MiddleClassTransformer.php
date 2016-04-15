@@ -17,7 +17,7 @@ use Symfony\Component\Form\DataTransformerInterface;
 /**
  *  Transformer for converting between middle class and target class instances.
  *
- * @author Abdielcs Carrazana <abdielcs@gmail.com>
+ * @author Abdiel Carrazana <abdielcs@gmail.com>
  */
 class MiddleClassTransformer implements DataTransformerInterface
 {

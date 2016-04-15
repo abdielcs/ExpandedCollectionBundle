@@ -19,7 +19,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 /**
  * Custom form type for render expanded entities collections in a OneToMany association mapping.
  *
- * @author Abdielcs Carrazana <abdielcs@gmail.com>
+ * @author Abdiel Carrazana <abdielcs@gmail.com>
  */
 class ExpandedOTMType extends AbstractType
 {

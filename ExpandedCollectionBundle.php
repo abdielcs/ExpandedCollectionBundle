@@ -14,7 +14,7 @@ namespace abdielcs\ExpandedCollectionBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * @author Abdielcs Carrazana <abdielcs@gmail.com>
+ * @author Abdiel Carrazana <abdielcs@gmail.com>
  */
 class ExpandedCollectionBundle extends Bundle
 {
