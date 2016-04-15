@@ -1,4 +1,14 @@
+parameters:
+     expanded_otm.form: abdielcs\ExpandedCollectionBundle\Form\ExpandedOTMType
+     expanded_mtm.form: abdielcs\ExpandedCollectionBundle\Form\ExpandedMTMType
+
 services:
-#    expanded_collection.example:
-#        class: abdielcs\ExpandedCollectionBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    expanded_otm.service:
+       class: "%expanded_otm.form%"
+       tags:
+          - { name: form.type, alias: 'expanded_otm' }
+
+    expanded_otm.service:
+       class: "%expanded_mtm.form%"
+       tags:
+          - { name: form.type, alias: 'expanded_mtm' }

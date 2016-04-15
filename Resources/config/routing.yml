@@ -1,3 +1,0 @@
-expanded_collection_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: ExpandedCollectionBundle:Default:index }

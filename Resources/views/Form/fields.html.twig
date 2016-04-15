@@ -1,0 +1,31 @@
+{%- block choice_widget_expanded -%}
+    <table {{ block('widget_container_attributes') }}>
+        <thead>
+        <tr>
+            <th>#</th>
+            {% for field in fields %}
+                <th>{{ field | capitalize }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        {%- for child in form %}
+            <tr>
+                {{- block('abdielcs_expanded') -}}
+            </tr>
+        {% endfor -%}
+        </tbody>
+    </table>
+{% endblock choice_widget_expanded %}
+
+{%- block abdielcs_expanded -%}
+    <td>
+        {{- form_widget(child) -}}
+    </td>
+    {% for field in fields %}
+        <td> {{ attribute(child.vars['object_data'], field) }}</td>
+    {% endfor %}
+{% endblock abdielcs_expanded %}
+
+
+
