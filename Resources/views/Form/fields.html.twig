@@ -1,31 +1,34 @@
-{%- block choice_widget_expanded -%}
+{%- block expanded_otm_widget -%}
     <table {{ block('widget_container_attributes') }}>
         <thead>
         <tr>
-            <th>#</th>
+            <th></th>
             {% for field in fields %}
-                <th>{{ field | capitalize }}</th>
+                <th>
+                    {% set field_label = (field is iterable ? (field.label is defined ? field.label : field.property) : field) %}
+                    {% include '@ExpandedCollection/Form/headers.html.twig' %}
+                </th>
             {% endfor %}
         </tr>
         </thead>
         <tbody>
         {%- for child in form %}
             <tr>
-                {{- block('abdielcs_expanded') -}}
+                <td>
+                    {{- form_widget(child) -}}
+                </td>
+                {% for field in fields %}
+                    <td>
+                        {% set field_property = (field is iterable ? field.property : field) %}
+                        {% set field_type = (field is iterable and field.type is defined ? field.type : 'string') %}
+                        {% set value = attribute(child.vars['object_data'], field_property) %}
+                        {% if (field is iterable and field.format is defined) %}{% set field_format = field.format %}{% endif %}
+                        {% set field_options = (field is iterable and field.options is defined ? field.options : {}) %}
+                        {% include ('@ExpandedCollection/Form/field_'~field_type~'.html.twig') %}
+                    </td>
+                {% endfor %}
             </tr>
         {% endfor -%}
         </tbody>
     </table>
-{% endblock choice_widget_expanded %}
-
-{%- block abdielcs_expanded -%}
-    <td>
-        {{- form_widget(child) -}}
-    </td>
-    {% for field in fields %}
-        <td> {{ attribute(child.vars['object_data'], field) }}</td>
-    {% endfor %}
-{% endblock abdielcs_expanded %}
-
-
-
+{% endblock expanded_otm_widget %}

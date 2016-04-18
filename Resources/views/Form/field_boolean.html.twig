@@ -1,0 +1,7 @@
+{% if value == true %}
+    {% set true_option = (field_options.true is defined ? field_options.true : 'True') %}
+    {{ translation_domain is same as(false) ? true_option : true_option|trans({}, translation_domain) }}
+{% else %}
+    {% set false_option = (field_options.false is defined ? field_options.false : 'False') %}
+    {{ translation_domain is same as(false) ? false_option : false_option|trans({}, translation_domain) }}
+{% endif %}

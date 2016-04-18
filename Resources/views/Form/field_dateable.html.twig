@@ -1,0 +1,6 @@
+{% if field_format is defined %}
+    {{ value|date(field_format) }}
+{% else %}
+    {{ value|date }}
+{% endif %}
+
