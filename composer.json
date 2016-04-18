@@ -7,8 +7,7 @@
         "email" : "abdielcs@gmail.com"
     }],
     "keywords" : [
-        "collection",
-		"expanded"
+        "collection", "expanded","checkbox","list","symfony2","symfony3","form"
     ],
     "license" : [
         "MIT"
