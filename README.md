@@ -8,7 +8,7 @@ Expanded Collection List
 Symfony 2 and 3 bundle for rendering a collection of entities as an expanded selectable list.
 Include some usefull form types extending the native entity form field, so all entity options
 could by used (like query_builder), except expanded and multiple, since all the bundle types are based in those
-options setted to true. Read more about entity type field in the [symfony documentation](https://getcomposer.org/doc/00-intro.md).
+options setted to true. Read more about [entity type field](http://symfony.com/doc/current/reference/forms/types/entity.html).
 
 
 **Features**
@@ -16,7 +16,7 @@ options setted to true. Read more about entity type field in the [symfony docume
   * [Be able to configure wich entity properties or get method should be rendered and how](Resources/doc/1-fields-configuration.md)
   * [Render a collection of entities as an expanded checkbox list](Resources/doc/2-expanded-onetomany.md)
   * [Handling ManyToMany related collection as an expanded checkbox list](Resources/doc/3-expanded-manytomany.md)
-  * [Support for bootstrap 3 symfony theme](Resources/doc/4-bootstrap_3_example.md)
+  * [Support for bootstrap 3 symfony theme](Resources/doc/4-bootstrap-3-example.md)
 
 Installation
 ------------

@@ -142,10 +142,11 @@ be adapted to your needs.
 Thanks
 ------
 
-Some of the concepts used in this configuration options as other ideas, came from the
-[javiereguiluz/easyadmin-bundle](https://github.com/javiereguiluz/EasyAdminBundle), so thanks to all it's collaborator for such
-amazing bundle.
+Some of the concepts used in this configuration options as other ideas, are inspired in
+[javiereguiluz/easyadmin-bundle][4], so thanks to all it's collaborator for such amazing
+bundle.
 
 [1]: http://php.net/manual/en/function.date.php
 [2]: http://php.net/manual/en/function.sprintf.php
 [3]: http://twig.sensiolabs.org/doc/filters/raw.html
+[4]: https://github.com/javiereguiluz/EasyAdminBundle
