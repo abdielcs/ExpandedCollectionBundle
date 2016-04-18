@@ -19,10 +19,13 @@ options setted to true. Read more about [entity type field](http://symfony.com/d
 Installation
 ------------
 
-### Step 1: Download the Bundle
+### Step 1: Include the bundle in your require section of composer.json and do a composer update.
 
-```bash
-$ composer require abdielcs/expanded-collection-bundle
+```json
+"require": {
+        // ...
+        "abdielcs/expanded-collection-bundle": "dev-master"
+    },
 ```
 
 This command requires you to have Composer installed globally, as explained
