@@ -3,7 +3,7 @@ Work in progress ...
 Expanded Collection List
 ========================
 
-<img src="https://raw.githubusercontent.com/abdielcs/ExpandedCollectionBundle/master/Resources/doc/images/expanded-checkbox-list.jpg" alt="Symfony expanded list"/>
+<img src="https://raw.githubusercontent.com/abdielcs/ExpandedCollectionBundle/master/Resources/doc/images/expanded-checkbox-list.png" alt="Symfony expanded list"/>
 
 Symfony 2 and 3 bundle for rendering a collection of entities as an expanded selectable list.
 Include some usefull form types extending the native entity form field, so all entity options
