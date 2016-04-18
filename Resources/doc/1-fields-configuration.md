@@ -75,7 +75,7 @@ Also you can specify some [date configuration options][1].
 ))
 ```
 
-### Decimal type
+### Numeric type
 
 You can format some decimal types too according to its [format configuration][2]
 
@@ -85,7 +85,7 @@ You can format some decimal types too according to its [format configuration][2]
     'fields' => array(
         array(
             'property' => 'price',
-            'type' => 'decimal',
+            'type' => 'numeric',
             'format' => '%.2f'
         ),
     ),
@@ -143,9 +143,9 @@ Thanks
 ------
 
 Some of the concepts used in this configuration options as other ideas, came from the
-[javiereguiluz/easyadmin-bundle](Resources/doc/4-bootstrap_3_example.md), so thanks to all it's collaborator for such
+[javiereguiluz/easyadmin-bundle](https://github.com/javiereguiluz/EasyAdminBundle), so thanks to all it's collaborator for such
 amazing bundle.
 
 [1]: http://php.net/manual/en/function.date.php
 [2]: http://php.net/manual/en/function.sprintf.php
-[3]: http://twig raw filter
+[3]: http://twig.sensiolabs.org/doc/filters/raw.html
