@@ -124,7 +124,7 @@ template will be responsable for render the field property. You just need to cre
 own template in app/Resources/ExpandedCollectionBundle/views/Form folder with the following
 naming convention:
 
-field_<type>.html.twig
+field_`<type>`.html.twig
 
 So, if you need to create an 'image' type, them you must create yor custom
 'app/Resources/ExpandedCollectionBundle/views/Form/field_image.html.twig'. In there you can
