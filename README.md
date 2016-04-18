@@ -13,10 +13,10 @@ options setted to true. Read more about [entity type field](http://symfony.com/d
 
 **Features**
 
-  * [Be able to configure wich entity properties or get method should be rendered and how](Resources/doc/1-fields-configuration.md)
-  * [Render a collection of entities as an expanded checkbox list](Resources/doc/2-expanded-onetomany.md)
-  * [Handling ManyToMany related collection as an expanded checkbox list](Resources/doc/3-expanded-manytomany.md)
-  * [Support for bootstrap 3 symfony theme](Resources/doc/4-bootstrap-3-example.md)
+  * [Be able to configure wich entity properties or get method should be rendered and how.](Resources/doc/1-fields-configuration.md)
+  * [Render a collection of entities as an expanded checkbox list.](Resources/doc/2-expanded-onetomany.md)
+  * [Handling ManyToMany related collection as an expanded checkbox list.](Resources/doc/3-expanded-manytomany.md)
+  * [Support for bootstrap 3 symfony theme.](Resources/doc/4-bootstrap-3-example.md)
 
 Installation
 ------------
