@@ -143,7 +143,7 @@ Thanks
 ------
 
 Some of the concepts used in this configuration options as other ideas, are inspired in
-[javiereguiluz/easyadmin-bundle][4], so thanks to all it's collaborator for such amazing
+[javiereguiluz/easyadmin-bundle][4], so thanks to all it's collaborators for such amazing
 bundle.
 
 [1]: http://php.net/manual/en/function.date.php
