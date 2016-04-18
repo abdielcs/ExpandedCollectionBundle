@@ -1,6 +1,6 @@
 {
     "name" : "abdielcs/expanded-collection-bundle",
-    "description" : "Work in progress",
+    "description" : "Symfony 2 and 3 bundle for rendering a collection of entities as an expanded selectable list",
     "type" : "symfony-bundle",
     "authors" : [{
         "name" : "Abdiel Carrazana",
