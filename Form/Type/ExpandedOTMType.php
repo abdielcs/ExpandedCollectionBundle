@@ -25,7 +25,11 @@ class ExpandedOTMType extends AbstractType
 {
     public function getParent()
     {
-        return 'entity';
+        if (Kernel::MAJOR_VERSION > 2) {
+            return EntityType::class;
+        } else {
+            return 'entity';
+        }
     }
 
     public function getName()
@@ -42,6 +46,11 @@ class ExpandedOTMType extends AbstractType
      * {@inheritdoc}
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+        $this->configureOptions($resolver);
+    }
+
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'multiple' => true,

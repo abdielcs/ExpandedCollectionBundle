@@ -14,6 +14,7 @@ namespace abdielcs\ExpandedCollectionBundle\Form\Type;
 use abdielcs\ExpandedCollectionBundle\Form\DataTransformer\MiddleClassTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
@@ -34,7 +35,11 @@ class ExpandedMTMType extends AbstractType
 
     public function getParent()
     {
-        return 'expanded_otm';
+        if (Kernel::MAJOR_VERSION > 2) {
+            return ExpandedOTMType::class ;
+        } else {
+            return 'expanded_otm';
+        }
     }
 
     public function getName()
@@ -51,6 +56,11 @@ class ExpandedMTMType extends AbstractType
      * {@inheritdoc}
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+        $this->configureOptions($resolver);
+    }
+
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setRequired(array(
             'middle_class'

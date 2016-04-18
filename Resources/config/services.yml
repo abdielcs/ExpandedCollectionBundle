@@ -8,7 +8,7 @@ services:
        tags:
           - { name: form.type, alias: 'expanded_otm' }
 
-    expanded_otm.service:
+    expanded_mtm.service:
        class: "%expanded_mtm.form%"
        tags:
           - { name: form.type, alias: 'expanded_mtm' }
