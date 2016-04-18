@@ -14,6 +14,7 @@ namespace abdielcs\ExpandedCollectionBundle\Form\Type;
 use abdielcs\ExpandedCollectionBundle\Form\DataTransformer\MiddleClassTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
