@@ -40,7 +40,7 @@ class MiddleClassTransformer implements DataTransformerInterface
      */
     public function transform($collection)
     {
-        if($collection != null){
+        if($collection !== null){
             $result = new ArrayCollection();
 
             $propertyRef = new \ReflectionClass($this->propertyClass);
@@ -72,7 +72,6 @@ class MiddleClassTransformer implements DataTransformerInterface
         $propertyRef = new \ReflectionClass($this->propertyClass);
         $middleRef = new \ReflectionClass($this->middleClass);
         $setMethod = 'set' . $propertyRef->getShortName();
-        $getId = 'getId';
         if ($middleRef->hasMethod($setMethod)) {
             foreach($collection as $item){
                 $middle = $middleRef->newInstance();

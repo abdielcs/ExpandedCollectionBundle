@@ -1,6 +1,6 @@
 parameters:
-     expanded_otm.form: abdielcs\ExpandedCollectionBundle\Form\ExpandedOTMType
-     expanded_mtm.form: abdielcs\ExpandedCollectionBundle\Form\ExpandedMTMType
+     expanded_otm.form: abdielcs\ExpandedCollectionBundle\Form\Type\ExpandedOTMType
+     expanded_mtm.form: abdielcs\ExpandedCollectionBundle\Form\Type\ExpandedMTMType
 
 services:
     expanded_otm.service:

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace abdielcs\ExpandedCollectionBundle\Form;
+namespace abdielcs\ExpandedCollectionBundle\Form\Type;
 
 use abdielcs\ExpandedCollectionBundle\Form\DataTransformer\MiddleClassTransformer;
 use Symfony\Component\Form\AbstractType;
