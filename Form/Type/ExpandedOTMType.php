@@ -15,7 +15,6 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
-use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
@@ -28,7 +27,7 @@ class ExpandedOTMType extends AbstractType
 {
     public function getParent()
     {
-        if (Kernel::MAJOR_VERSION > 2) {
+        if (method_exists('Symfony\Component\Form\AbstractType', 'getBlockPrefix')) {
             return EntityType::class;
         } else {
             return 'entity';

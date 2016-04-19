@@ -14,7 +14,6 @@ namespace abdielcs\ExpandedCollectionBundle\Form\Type;
 use abdielcs\ExpandedCollectionBundle\Form\DataTransformer\MiddleClassTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
@@ -36,8 +35,8 @@ class ExpandedMTMType extends AbstractType
 
     public function getParent()
     {
-        if (Kernel::MAJOR_VERSION > 2) {
-            return ExpandedOTMType::class ;
+        if (method_exists('Symfony\Component\Form\AbstractType', 'getBlockPrefix')) {
+            return ExpandedOTMType::class;
         } else {
             return 'expanded_otm';
         }
