@@ -212,7 +212,7 @@ class ShipmentType extends AbstractType
     {
         $builder
             ->add('created')
-            ->add('products','expanded_otm',array(
+            ->add('products',ExpandedOTMType::class,array(
                 'class'    => 'AppBundle\Entity\Product',
                 'fields' => array('name','code','price'),
             ))
@@ -222,6 +222,20 @@ class ShipmentType extends AbstractType
     // ...
 }
 ```
+
+Note: For Symfony2 you can use 'expanded_otm' form type:
+
+```php
+
+$builder
+            ->add('created')
+            ->add('products','expanded_otm',array(
+                'class'    => 'AppBundle\Entity\Product',
+                'fields' => array('name','code','price'),
+            ))
+        ;
+```
+
 
 For get the expected view also we need to set a form theme in the show and edit views:
 

@@ -309,7 +309,7 @@ class ShipmentType extends AbstractType
     {
         $builder
             // ...
-            ->add('customerShipments','expanded_mtm',array(
+            ->add('customerShipments',ExpandedMTMType::class,array(
                 'class'    => 'AppBundle\Entity\Customer',
                 'middle_class' => 'AppBundle\Entity\CustomerShipment',
                 'fields' => array('firstName','lastName','age','country'),
@@ -319,6 +319,21 @@ class ShipmentType extends AbstractType
 
     // ...
 }
+```
+
+Note: For Symfony2 you can use 'expanded_mtm' form type:
+
+```php
+
+$builder
+            // ...
+            ->add('customerShipments','expanded_mtm',array(
+                'class'    => 'AppBundle\Entity\Customer',
+                'middle_class' => 'AppBundle\Entity\CustomerShipment',
+                'fields' => array('firstName','lastName','age','country'),
+            ))
+        ;
+
 ```
 
 Important: You could consider including the next code in the Shipment class in order to handle
