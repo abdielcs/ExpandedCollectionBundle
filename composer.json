@@ -13,7 +13,7 @@
         "MIT"
     ],
     "require" : {
-        "symfony/framework-bundle": "~2.3|~3.0"
+        "symfony/framework-bundle": "~2.3|~3.0|~4.0"
     },
     "autoload" : {
         "psr-4" : {
