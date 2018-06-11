@@ -32,6 +32,9 @@ class Configuration implements ConfigurationInterface
         // configure your bundle. See the documentation linked above for
         // more information on that topic.
 
+        // Symfony 4.1 requires a root node, so let's add one        
+        $rootNode = $treeBuilder->root('abdielcs_expanded_collection');
+
         return $treeBuilder;
     }
 }
